@@ -1,0 +1,95 @@
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+
+  --ff-space-mono: "Space Mono", monospace;
+
+  --pt-input: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-space-mono);
+  background: var(--light-grayish-cyan);
+}
+
+h1 {
+  font-size: 1.5em;
+  color: var(--dark-grayish-cyan);
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.container {
+  background: var(--white);
+  padding: 2.2em;
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+.form-group .form-input {
+  position: relative;
+  margin: 1em 0;
+}
+
+.form-group label {
+  color: var(--dark-grayish-cyan);
+  margin-bottom: .6em;
+}
+
+.form-group input {
+  border-radius: 6px;
+  background: var(--very-light-grayish-cyan);
+  color: var(--very-dark-cyan);
+  font-family: var(--ff-space-mono);
+  font-size: var(--pt-input);
+  display: block;
+  width: 100%;
+  border: none;
+  padding: .3em 1em;
+  text-align: end;
+}
+
+.form-group .form-input i {
+  color: var(--light-grayish-cyan);
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+.form-group input::placeholder {
+  font-family: FontAwesome, Arial;
+  text-align: start;
+}
+
+.form-group .tip-grid {
+  margin: 1em 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .85em;
+}
+
+.form-group .tip-grid .tip-input {
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--pt-input);
+  border-radius: 4px;
+  background: var(--very-dark-cyan);
+  color: var(--white);
+  padding: .2em 1em;
+}
+
+.form-group .tip-grid .tip-input:hover {
+  background: var(--light-grayish-cyan);
+  color: var(--very-dark-cyan);
+}
